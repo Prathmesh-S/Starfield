@@ -1,7 +1,10 @@
+//your code here
+Particle [] dots = new Particle[1000];
+boolean back = false;
 void setup()
 {
-  background(0);
   size(500, 500);
+  background(0);
   for (int i = 0; i<dots.length; i++) {
   dots[i] = new Particle();
   dots[0] = new OddballParticle();
@@ -33,7 +36,7 @@ class Particle
     myX = 250;
     myY =200;
     myColor = color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-    mySpeed = (float) ((Math.random() *3)+1);
+    mySpeed = (float) ((Math.random() *2)+1);
     myAngle =  (float) (Math.random() *360);
   }
   void move(){
